@@ -25,7 +25,7 @@ def time_alignment(imu_data, gnss_data):
 
 if __name__ == "__main__":
     # 加载原始数据（示例路径）
-    imu_raw, gnss_raw = load_imu_gnss_data("data/raw/ICM20602.txt", "data/raw/gnss_pos.txt")
+    imu_raw, gnss_raw = load_imu_gnss_data("data/ICM20602/ICM20602/ICM20602.txt", "data/GNSS RTK/GNSS_RTK.pos/GNSS_RTK.pos")
 
     # 时间对齐处理
     imu_aligned, gnss_aligned = time_alignment(imu_raw, gnss_raw)

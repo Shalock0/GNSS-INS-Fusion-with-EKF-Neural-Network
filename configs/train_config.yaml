@@ -1,0 +1,20 @@
+# 训练参数
+training:
+  batch_size: 32
+  learning_rate: 0.0005
+  epochs: 100
+  window_size: 4  # 时间窗口（秒）
+  stride: 1       # 滑动步长（秒）
+
+# 模型参数
+model:
+  imu_dim: 6
+  gnss_dim: 3
+  hidden_dims: [64, 128, 256]
+  n_heads: 8
+
+# 数据路径
+paths:
+  raw_imu: data/raw/ICM20602.txt
+  raw_gnss: data/raw/gnss_pos.txt
+  processed_dir: data/processed
